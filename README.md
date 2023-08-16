@@ -39,12 +39,26 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
 ```bash
 npx husky install
 ```
-<img src="./docs/images/commitizen.png"></img>
 
 6. prepare-commit-msg에 commitizen 설정을 해준다
+
 -  커밋 메시지를 작성시에 포맷에 맞게 작성이 되게끔 도움을 준다. 
+
 ```bash
 npx husky add .husky/prepare-commit-msg 'exec < /dev/tty && git cz --hook || true'
 ```
 
-7. 
+7. commit-msg에 commitlint 세팅을 해준다
+```bash
+npx husky add .husky/commit-msg 'yarn commitlint --edit $1'
+```
+
+### 실행방법
+
+1. `git add <file-path>`로 변경사항이 있는 파일들을 추가를 한다
+2. `git commit`으로 커밋 메시지를 작성한다
+  
+  a. 커밋 타입을 생성한다
+    <img src="./docs/images/commitizen.png"></img>
+  b. 
+  
