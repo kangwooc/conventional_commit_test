@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/kangwooc/conventional_commit_test/compare/v2.0.0...v2.0.1) (2023-08-30)
+
+
+### Miscellaneous
+
+* **release-please.yml:** add release please pr ([ec6d132](https://github.com/kangwooc/conventional_commit_test/commit/ec6d132579eb20041d9ed3d29c519a464aeb0d35))
+
 ## [2.0.0](https://github.com/kangwooc/conventional_commit_test/compare/v1.0.0...v2.0.0) (2023-08-30)
 
 
