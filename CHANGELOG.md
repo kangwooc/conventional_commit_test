@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/kangwooc/conventional_commit_test/compare/v1.0.0...v2.0.0) (2023-08-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **release-please.yml:** - add needs section to release-gh-release step
+
+### CI/CD
+
+* **release-please.yml:** add additional step to create github release ([4dff0e7](https://github.com/kangwooc/conventional_commit_test/commit/4dff0e7e03871745fead198900968cd24f49a77c))
+* **release-please.yml:** edit release-please.yml ([43f8fba](https://github.com/kangwooc/conventional_commit_test/commit/43f8fba024c3786994502a656e0390adccea4beb))
+
 ## 1.0.0 (2023-08-21)
 
 
