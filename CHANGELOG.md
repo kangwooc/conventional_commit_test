@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/kangwooc/conventional_commit_test/compare/v2.0.1...v2.1.0) (2023-08-31)
+
+
+### Features
+
+* fix release-please-pr ([be1a264](https://github.com/kangwooc/conventional_commit_test/commit/be1a26411609205b9149f72cddb5f95a20994cc3))
+
+
+### Bug Fixes
+
+* add pr ([2b38c8e](https://github.com/kangwooc/conventional_commit_test/commit/2b38c8ef9e2e53db915fc38845a73ed1fd8c1e34))
+
 ## [2.0.1](https://github.com/kangwooc/conventional_commit_test/compare/v2.0.0...v2.0.1) (2023-08-30)
 
 
