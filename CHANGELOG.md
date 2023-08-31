@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.1...v2.1.2) (2023-08-31)
+
+
+### Bug Fixes
+
+* **package.json:** fix branches section in package.json ([#17](https://github.com/kangwooc/conventional_commit_test/issues/17)) ([4eda103](https://github.com/kangwooc/conventional_commit_test/commit/4eda10325a0e594f44d8834f2b07472f69f5f286))
+
 # Changelog
 
 ## [2.1.1](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.0...v2.1.1) (2023-08-31)

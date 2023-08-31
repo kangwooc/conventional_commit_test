@@ -1,6 +1,6 @@
 {
   "name": "conventional_commit_test",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "",
   "author": "",
   "private": true,
@@ -98,12 +98,16 @@
       [
         "@semantic-release/github",
         {
-          "assets": ["dist/**"]
+          "assets": [
+            "dist/**"
+          ]
         }
       ],
       "@semantic-release/changelog",
       "@semantic-release/git"
     ],
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   }
 }
