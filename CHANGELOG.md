@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.0...v2.1.1) (2023-08-31)
+
+
+### Continuous Integration
+
+* **release-please.yml:** edit release-please.yml ([#12](https://github.com/kangwooc/conventional_commit_test/issues/12)) ([cb0bbde](https://github.com/kangwooc/conventional_commit_test/commit/cb0bbdee5f4cee0ae1439bf8f92ddcbbb151d399))
+
 ## [2.1.0](https://github.com/kangwooc/conventional_commit_test/compare/v2.0.1...v2.1.0) (2023-08-31)
 
 
