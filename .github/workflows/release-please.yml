@@ -1,4 +1,7 @@
 on:
+  pull_request_target:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -53,10 +56,9 @@ jobs:
       - release-gh-release
     steps:
       - id: release-pr
-        uses: GoogleCloudPlatform/release-please-action@main
+        uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          fork: true
           package-name: release-please-action
           command: release-pr
       - id: label
@@ -68,8 +70,6 @@ jobs:
               const [owner, repo] = process.env.GITHUB_REPOSITORY.split('/');
               await github.issues.addLabels({
                 owner,
-                repo,
-                issue_number: ${{steps.release-pr.outputs.pr}},
-                labels: ['autorelease: pending']
+                repo
               });
               console.log(`Tagged ${{steps.release-pr.outputs.pr}}`)
