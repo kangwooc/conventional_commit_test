@@ -1,3 +1,10 @@
+### [2.1.5](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.4...v2.1.5) (2023-09-01)
+
+
+### 🐛 Bug Fixes
+
+* **package.json:** fix release option ([1694191](https://github.com/kangwooc/conventional_commit_test/commit/16941910f4c5179f9103fab7fff4bf16a86b1348))
+
 ## [2.1.4](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.3...v2.1.4) (2023-09-01)
 
 ## [2.1.3](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.2...v2.1.3) (2023-08-31)
