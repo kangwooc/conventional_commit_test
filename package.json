@@ -21,6 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
@@ -81,7 +82,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
     }
   },
   "release": {
@@ -91,19 +92,53 @@
         {
           "preset": "conventionalcommits",
           "releaseRules": [
-            { "type": "docs", "scope": "README", "release": "patch" },
-            { "type": "refactor", "release": "patch" },
-            { "type": "style", "release": "patch" },
-            { "type": "ci", "release": "patch" },
-            { "type": "test", "release": "patch" },
-            { "type": "build", "release": "patch" },
-            { "type": "chore", "release": "patch" },
-            { "type": "perf", "release": "patch" },
-            { "type": "fix", "release": "patch" },
-            { "type": "feat", "release": "minor" }
+            {
+              "type": "docs",
+              "scope": "README",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "style",
+              "release": "patch"
+            },
+            {
+              "type": "ci",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "build",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": "patch"
+            },
+            {
+              "type": "perf",
+              "release": "patch"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            }
           ],
           "parserOpts": {
-            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES"
+            ]
           }
         }
       ],
@@ -113,18 +148,66 @@
           "preset": "conventionalcommits",
           "presetConfig": {
             "types": [
-              { "type": "feat", "section": "✨ Features", "hidden": false },
-              { "type": "fix", "section": "🐛 Bug Fixes", "hidden": false },
-              { "type": "perf", "section": "🌈 Performance", "hidden": false },
-              { "type": "refactor", "section": "♻️ Refactor", "hidden": false },
-              { "type": "docs", "section": "📝 Docs", "hidden": false },
-              { "type": "style", "section": "💄 Styles", "hidden": false },
-              { "type": "revert", "section": "🕐 Reverts", "hidden": false },
-              { "type": "ci", "section": "💫 CI/CD", "hidden": false },
-              { "type": "test", "section": "✅ Tests", "hidden": true },
-              { "type": "chore", "section": "📦 Chores", "hidden": true },
-              { "type": "move", "section": "🚚 Move Files", "hidden": true },
-              { "type": "remove", "section": "🔥 Remove Files", "hidden": true } 
+              {
+                "type": "feat",
+                "section": "✨ Features",
+                "hidden": false
+              },
+              {
+                "type": "fix",
+                "section": "🐛 Bug Fixes",
+                "hidden": false
+              },
+              {
+                "type": "perf",
+                "section": "🌈 Performance",
+                "hidden": false
+              },
+              {
+                "type": "refactor",
+                "section": "♻️ Refactor",
+                "hidden": false
+              },
+              {
+                "type": "docs",
+                "section": "📝 Docs",
+                "hidden": false
+              },
+              {
+                "type": "style",
+                "section": "💄 Styles",
+                "hidden": false
+              },
+              {
+                "type": "revert",
+                "section": "🕐 Reverts",
+                "hidden": false
+              },
+              {
+                "type": "ci",
+                "section": "💫 CI/CD",
+                "hidden": false
+              },
+              {
+                "type": "test",
+                "section": "✅ Tests",
+                "hidden": true
+              },
+              {
+                "type": "chore",
+                "section": "📦 Chores",
+                "hidden": true
+              },
+              {
+                "type": "move",
+                "section": "🚚 Move Files",
+                "hidden": true
+              },
+              {
+                "type": "remove",
+                "section": "🔥 Remove Files",
+                "hidden": true
+              }
             ]
           }
         }
@@ -139,7 +222,10 @@
       [
         "@semantic-release/git",
         {
-          "assets": ["package.json", "CHANGELOG.md"],
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
           "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
         }
       ]
