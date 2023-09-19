@@ -1,3 +1,5 @@
+### [2.1.6](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.5...v2.1.6) (2023-09-19)
+
 ### [2.1.5](https://github.com/kangwooc/conventional_commit_test/compare/v2.1.4...v2.1.5) (2023-09-01)
 
 
